@@ -38,9 +38,9 @@ public abstract class FrogPresenter<M, V>{
 
         if(!detachModelWasCalling){
             onAttachedModelFirstTime(model);
+        } else {
+            onAttachedModel(model);
         }
-
-        onAttachedModel(model);
 
         if(setupDone())
             onUpdateView(model, view());
@@ -58,8 +58,9 @@ public abstract class FrogPresenter<M, V>{
 
         if(!detachViewWasCalling){
             onAttachedViewFirstTime(view);
+        } else {
+            onAttachedView(view);
         }
-        onAttachedView(view);
 
         if(setupDone())
             onUpdateView(model, view);
