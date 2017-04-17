@@ -1,12 +1,11 @@
 *.iml
-*.gradle
 *.properties
 /.idea
 .DS_Store
 /build
 /.gradle
-/gradle
 /captures
 .externalNativeBuild
 /gradlew
 *.bat
+upload_bintray.gradle
